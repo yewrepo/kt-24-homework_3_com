@@ -1,0 +1,1 @@
+enum class CardType { VK_PAY, VISA, MIR, MASTERCARD, MAESTRO }
