@@ -7,7 +7,7 @@ fun main() {
     printValues(v, calculateCommission(v, total, CardType.MAESTRO))
 }
 
-private fun printValues(amount: Int, commissionValue: Int) {
+fun printValues(amount: Int, commissionValue: Int) {
     println("сумма: ${amount / 100} руб, комиссия: ${commissionValue / 100} руб")
 }
 
