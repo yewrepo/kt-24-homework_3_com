@@ -5,7 +5,7 @@ sealed class MoneyTransferRules(
     val commissionStart: Int = 0
 ) {
     fun getCommission(transferValue: Int, totalMonthTransfer: Int): Int {
-        var commissionAmount: Int = 0
+        var commissionAmount = 0
         if (commissionStart > 0 && totalMonthTransfer > commissionStart) {
             commissionAmount = calculateCommission(transferValue)
         } else if (commissionStart == 0) {
