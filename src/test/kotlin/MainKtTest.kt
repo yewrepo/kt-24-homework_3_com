@@ -17,6 +17,6 @@ class MainKtTest {
         assertEquals(0, vkResult)
         assertEquals(35_00, visaResult)
         assertEquals(29_00, mastercardResult)
-        assertEquals(0, mastercardResultUnderLimit)
+        assertEquals(999999, mastercardResultUnderLimit)
     }
 }
